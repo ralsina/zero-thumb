@@ -29,7 +29,7 @@ This is heavily based on [this article](https://magpi.raspberrypi.org/articles/p
 
 Spoiler: it's not a thumb drive, it's a Raspberry Pi Zero W.
 
-Spoiler: but it's a thumb drive.
+Spoiler: but it's a thumb drive. I am using one of [these](https://www.banggood.com/USB-Dongle-With-Acrylic-Shield-for-Raspberry-Pi-Zero-or-Zero-W-p-1432397.html?gmcCountry=US&cur_warehouse=CN&createTmp=1&utm_source=google&utm_medium=cpc_ods&utm_campaign=nancy-content-sdsrm-jewelry-nancy-content&utm_content=nancy&gclid=Cj0KCQjwub-HBhCyARIsAPctr7xhj-ZatxXm-5wK3RPS8mBrAbdUVOqarSjvxbvF1Jjt_-fH2SXAO_oaAn1mEALw_wcB) but you can just use a plain old micro USB cable. There are versions of these "dongle converters" for a dollar or two if you look around.
 
 * It's a Raspberry Pi Zero W configured as a USB mass storage device
 * It will appear to be a read-only thumb drive of whatever size you want when you
@@ -87,3 +87,10 @@ systemctl enable usbshare
 18. reboot
 
 That's it.
+
+Now, as long as the Zero is in a network it can connect to, you can just send it files 
+by dropping them in your `~/Sync` and any computer it's plugged into will see them
+(eventually).
+
+I have had *very* bad performance with large files, probably because the version of
+Syncthing in Raspberry OS is ancient. See if you can update it.
