@@ -88,6 +88,9 @@ systemctl enable usbshare
 
 That's it.
 
+The `usbshare.py` script disconnects and reconnects the computer from the "thumb drive" when new files appear, otherwise it will not see them. Should be seamless in Windows and OSX, not
+so much in Linux (works fine if you open the device in a file manager without mounting it)
+
 Now, as long as the Zero is in a network it can connect to, you can just send it files 
 by dropping them in your `~/Sync` and any computer it's plugged into will see them
 (eventually).
