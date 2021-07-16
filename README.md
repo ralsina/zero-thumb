@@ -95,5 +95,11 @@ Now, as long as the Zero is in a network it can connect to, you can just send it
 by dropping them in your `~/Sync` and any computer it's plugged into will see them
 (eventually).
 
+## Notes
+
 I have had *very* bad performance with large files, probably because the version of
 Syncthing in Raspberry OS is ancient. See if you can update it.
+
+You can see the status of sync between devices using your computer's syncthing UI:
+
+![image](https://user-images.githubusercontent.com/1579/125876367-ff127982-3267-4f84-ba3e-0253298b93c7.png)
